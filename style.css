@@ -1,31 +1,38 @@
+/* Base styling */
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Segoe UI", Roboto, sans-serif;
   margin: 0;
   padding: 0;
-  background: #ffffff;
-  color: #222;
+  background: #f4f7fb;
+  color: #333;
   line-height: 1.6;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 20px;
 }
 
+/* Header with gradient */
 header {
   display: flex;
   align-items: flex-start;
+  padding: 30px;
+  border-radius: 12px;
   margin-bottom: 40px;
+  background: linear-gradient(120deg, #005f73, #0a9396);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .profile-photo {
-  width: 160px;
-  height: 160px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 25px;
   object-fit: cover;
-  border: 2px solid #ddd;
+  border: 3px solid #fff;
 }
 
 header .intro {
@@ -33,19 +40,18 @@ header .intro {
 }
 
 header h1 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 28px;
+  margin: 0;
+  font-size: 32px;
 }
 
 header p {
-  margin-bottom: 15px;
+  margin: 10px 0;
 }
 
 nav a {
   margin-right: 15px;
   text-decoration: none;
-  color: #004466;
+  color: #ffd60a;
   font-weight: bold;
 }
 
@@ -53,21 +59,27 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Section cards */
 section {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  background: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
 }
 
 h2 {
-  border-bottom: 2px solid #eee;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-  font-size: 22px;
+  margin-top: 0;
+  font-size: 24px;
+  color: #005f73;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 6px;
 }
 
+/* Footer */
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   font-size: 14px;
   color: #666;
-  border-top: 1px solid #eee;
 }
