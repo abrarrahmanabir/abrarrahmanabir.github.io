@@ -1,76 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Abrar Rahman Abir</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Abrar Rahman Abir — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="abrar.jpg" alt="Abrar Rahman Abir" class="profile-photo">
-      <div class="intro">
-        <h1>Abrar Rahman Abir</h1>
-        <p>Professional Researcher | Incoming PhD Student</p>
-        <p>I work at the intersection of computational biology, bioinformatics, and AI, with a focus on RNA and protein design, connectomics segmentation, and multi-omics integration. I collaborate with international research labs including UCF, MIT, and Virginia Tech.</p>
-        <nav>
-          <a href="#publications">Publications</a>
-          <a href="#posters">Posters</a>
-          <a href="#news">News</a>
-          <a href="#research">Research</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-          <a href="CV.pdf">CV</a>
-        </nav>
+  <!-- Top Bar -->
+  <header class="topbar" aria-label="Primary">
+    <div class="topbar-inner container">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-name">Abrar Rahman Abir</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="nav">
+        <a class="nav-link" href="#publications">Publications</a>
+        <a class="nav-link" href="#posters">Posters</a>
+        <a class="nav-link" href="#news">News</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section id="home" class="hero section" aria-label="Introduction">
+      <div class="hero-text">
+        <h1 class="title">Abrar Rahman Abir</h1>
+
+
+
+<b></b>
+
+        <div class="subtitle">
+  <p>
+    I am <b>Abrar Rahman Abir</b>, a senior undergraduate at the 
+    <b>Bangladesh University of Engineering and Technology (BUET)</b>, majoring in 
+    Computer Science and Engineering. From the very beginning of my undergraduate journey, 
+    I have been deeply passionate about <b>Computational Biology</b> and <b>Machine Learning</b>. 
+    My profound fascination for Mathematics drives me to explore the vast realm of Machine Learning, 
+    and I am particularly excited by the challenge of designing novel machine learning methods 
+    to address complex biological problems.
+  </p>
+
+  <p>
+    Since my third year, I have had the privilege of being closely supervised by 
+    <a href="https://www.cs.ucf.edu/~wzhang/" target="_blank" rel="noopener"><b>Dr. Wei Zhang</b> </a> 
+    at the University of Central Florida and 
+    <a href="https://bioinformatics.cs.vt.edu/zhanglab/index.html" target="_blank" rel="noopener"><b>Dr. Liqing Zhang</b></a> 
+    at Virginia Tech. Currently, my undergraduate thesis is focused on <b>Connectomics</b>, conducted in collaboration with the 
+    <a href="https://shavitlab.csail.mit.edu/" target="_blank" rel="noopener"><b>Shavit Lab at MIT</b></a>. 
+    My thesis supervisor at BUET is 
+    <a href="https://cse.buet.ac.bd/faculty/faculty_detail/bayzid" target="_blank" rel="noopener"><b>Dr. Md Shamsuzzoha Bayzid</b></a>, 
+    to whom I remain profoundly grateful for his mentorship and guidance.
+  </p>
+
+  <p> My research spans multiple domains, with a strong publication record : </p>
+  <ul>
+    <li>Machine Learning for Structural Biology</li>
+    <li>Generative Models for Biomolecules</li>
+    <li>Computational Connectomics</li>
+    <li>Computer Vision</li>
+    <li>Single-cell and Spatial transcriptomics and combinatorial optimization</li>
+    <li>Neural Combinatorial Optimization</li>
+
+  </ul>
+
+  <p>
+    These experiences have shaped my vision of pursuing impactful research at the intersection 
+    of <b>biology, computation, and AI</b>, with the goal of contributing methods that advance both 
+    science and medicine.
+  </p>
+</div>
+
+
+
+
+
+        <!-- Labeled social buttons with logos -->
+        <div class="social">
+          <!-- Google Scholar -->
+          <a class="icon-pill" href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=i1yucrAAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3L1 12l11 3 9-3-9-9zM1 12l6 2-6 5V12zm11 3l-5-1.7V16l5 2 5-2v-2.7L12 15zM23 12l-6 2 6 5V12z"/></svg>
+            <span>Google Scholar</span>
+          </a>
+          <!-- GitHub -->
+          <a class="icon-pill" href="https://github.com/abrarrahmanabir" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 000 12a11.5 11.5 0 008 11c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.4-4-1.4-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .8.1-.7.4-1.1.7-1.4-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.1s1-.3 3.3 1.2a11.3 11.3 0 016 0C17 3.2 18 3.5 18 3.5a4.2 4.2 0 01.1 3.1 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.3.8 1 .8 2.1v3c0 .3.2.7.8.6A11.5 11.5 0 0024 12 11.5 11.5 0 0012 .5z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <!-- LinkedIn -->
+          <a class="icon-pill" href="https://www.linkedin.com/in/abrar-rahman-abir-4baa7a23a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSLAzvKSaQQGzDjaaJTWHXA%3D%3D" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 107.5 6a2.5 2.5 0 00-2.52-2.5zM3 8.98h3.96V21H3zm7.49 0H14.3v1.64h.05c.46-.87 1.58-1.79 3.26-1.79 3.49 0 4.14 2.3 4.14 5.29V21h-3.96v-4.53c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39V21H10.5z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
       </div>
-    </header>
 
-    <section id="publications">
-      <h2>Publications</h2>
-      <ul>
-        <li><b>UnCOT-AD</b>, Nature Communications, 2024.</li>
-        <li><b>RNA-EFM</b>, Briefings in Bioinformatics, 2025.</li>
-        <li><b>BioLLMNet</b>, ISMB 2025.</li>
-      </ul>
+      <div class="hero-photo">
+        <img class="photo" src="me.jpg" alt="Portrait of Abrar Rahman Abir" />
+      </div>
     </section>
 
-    <section id="posters">
-      <h2>Posters</h2>
-      <ul>
-        <li>ISMB 2024 – Poster on RNA-EFM</li>
-        <li>RECOMB 2025 – Poster on BioLLMNet</li>
-      </ul>
-    </section>
 
-    <section id="news">
-      <h2>News</h2>
-      <ul>
-        <li>[2025] Paper accepted at ISMB</li>
-        <li>[2024] Presented poster at RECOMB</li>
-      </ul>
-    </section>
+<section id="publications" class="card section" aria-label="Publications">
+  <h2>Publications</h2>
 
-    <section id="research">
-      <h2>Research Experience</h2>
-      <p>I focus on computational frameworks for omics translation, protein–ligand prediction, antibody design, and connectomics segmentation. My work combines deep learning, graph neural networks, and generative models to address biomedical challenges.</p>
-    </section>
+  <ol class="clean-list">
 
-    <section id="education">
-      <h2>Education</h2>
-      <p><b>Bangladesh University of Engineering and Technology (BUET)</b><br>
-         BSc in Computer Science and Engineering (Expected 2026)</p>
-    </section>
+    <li>
+      <a class="paper-link" href="https://doi.org/10.1093/bib/bbaf438" target="_blank" rel="noopener">
+        <b>UnCOT-AD</b>: Unpaired Cross-Omics Translation Enables Multi-Omics Integration for Alzheimer’s Disease Prediction
+      </a>
+      <span class="meta">
+        <b>Abrar Rahman Abir</b>, Sajib Acharjee Dip, Liqing Zhang <br>
+        Briefings in Bioinformatics, 2025 (Impact Factor 7.7)
+      </span>
+    </li>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:abrarrahmanabir@gmail.com">abrarrahmanabir@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/abrarrahmanabir">github.com/abrarrahmanabir</a></p>
-      <p>Google Scholar: <a href="https://scholar.google.com/citations?user=XXXX">Scholar Profile</a></p>
-    </section>
-
-    <footer>
-      <p>© 2025 Abrar Rahman Abir</p>
-    </footer>
+<li>
+  <a class="paper-link" href="https://doi.org/10.1093/bib/bbaf441" target="_blank" rel="noopener">
+    <b>LOCAS</b>: Multi-label mRNA Localization with Supervised Contrastive Learning
+  </a>
+  <div class="meta">
+    <b>Abrar Rahman Abir</b>*, Md Toki Tahmid*, M Saifur Rahman <br>
+    NeurIPS MLSB Workshop, 2025 <br>
+    Briefings in Bioinformatics, 2025 (Impact Factor 7.7)
   </div>
+</li>
+
+
+    <li>
+      <b>GTG-ACO</b>: Graph Transformer Guided Ant Colony Optimization for Learning Heuristics and Pheromone Dynamics for Combinatorial Optimization
+      <span class="meta">
+        <b>Abrar Rahman Abir</b>, Adnan Arefeen, Muhammad Ali Nayeem, M Sohel Rahman <br>
+        Swarm and Evolutionary Computation, 2025 (Impact Factor 8.5)
+      </span>
+    </li>
+
+    <li>
+      <a class="paper-link" href="https://academic.oup.com/bib/article/26/3/bbaf199/8124238" target="_blank" rel="noopener">
+        <b>DeepRNA-Twist</b>: Language Model Guided RNA Torsion Angle Prediction with Attention-Inception Network
+      </a>
+      <span class="meta">
+        <b>Abrar Rahman Abir</b>, Md Toki Tahmid, Rafiqul Islam Rayan, M Saifur Rahman <br>
+        Briefings in Bioinformatics, 2025 (Impact Factor 7.7)
+      </span>
+    </li>
+
+    <li>
+      <b>BioLLMNet</b>: Enhancing RNA-Interaction Prediction with a Specialized Cross-LLM Transformation Network
+      <span class="meta">
+        <b>Abrar Rahman Abir</b>*, Md Toki Tahmid*, Md Shamsuzzoha Bayzid <br>
+        Briefings in Bioinformatics, 2025 (Minor Revision)
+      </span>
+    </li>
+
+    <li>
+      <b>RNA-EFM</b>: Energy-based Flow Matching for Protein-conditioned RNA Sequence-Structure Co-design
+      <span class="meta">
+        <b>Abrar Rahman Abir</b>, Liqing Zhang <br>
+        ICLR GEM Workshop, 2025 <br>
+        Bioinformatics Advances, 2025 (Minor Revision)
+      </span>
+    </li>
+
+    <li>
+      <b>DCGAT-DTI</b>: Dynamic Cross Graph Attention Network for Drug-Target Interaction Prediction
+      <span class="meta">
+        <b>Abrar Rahman Abir</b>, Muhtasim Noor Alif, Khandakar Tanvir Ahmed, Wei Zhang <br>
+        Bioinformatics Advances, 2025 (Minor Revision)
+      </span>
+    </li>
+
+    <li>
+      <a class="paper-link" href="https://arxiv.org/pdf/2505.12358" target="_blank" rel="noopener">
+        <b>AbFlowNet</b>: Optimizing Antibody-Antigen Binding Energy via Diffusion-GFlowNet Fusion
+      </a>
+      <span class="meta">
+        <b>Abrar Rahman Abir</b>*, Haz Sameen Shahgir*, Md Rownok Zahan Ratul, Md Toki Tahmid, Greg Ver Steeg, Yue Dong <br>
+        Accepted at ICML GenBio Workshop, 2025 <br>
+        Under Review at NeurIPS, 2025
+      </span>
+    </li>
+
+    <li>
+      <a class="paper-link" href="https://arxiv.org/pdf/2508.08312" target="_blank" rel="noopener">
+        <b>CFM-GP</b>: Unified Conditional Flow Matching to Learn Gene Perturbation Across Cell Types
+      </a>
+      <span class="meta">
+        <b>Abrar Rahman Abir</b>*, Sajib Acharjee Dip*, Liqing Zhang <br>
+        Under Review at Nature Communications, 2025
+      </span>
+    </li>
+
+    <li>
+      <a class="paper-link" href="https://link.springer.com/article/10.1007/s12145-025-01756-6" target="_blank" rel="noopener">
+        <b>Use of CPT and Other Parameters for Estimating Soil Unit Weight using Optimised Machine Learning Models</b>
+      </a>
+      <span class="meta">
+        Swaranjit Roy, <b>Abrar Rahman Abir</b>, Mehedi A Ansary <br>
+        Earth Science Informatics, 2025 (Impact Factor 3.0)
+      </span>
+    </li>
+
+    <li>
+      <a class="paper-link" href="https://dl.acm.org/doi/abs/10.1145/3639592.3639598" target="_blank" rel="noopener">
+        <b>A Machine Learning Based Novel Approach of Predicting International Roughness Index (IRI)</b> from Traffic Characteristics using Random Forest Regression
+      </a>
+      <span class="meta">
+        <b>Abrar Rahman Abir</b> <br>
+        Proceedings of the 6th Artificial Intelligence and Cloud Computing Conference, 2023
+      </span>
+    </li>
+
+    <li>
+      <b>ST-DISTAL</b>: Learning Spatial Transcriptomics Deconvolution via Spectral-Spatial Dual-Branch GCNs with Distributional Alignment
+      <span class="meta">
+        <b>Abrar Rahman Abir</b>, Muhtasim Noor Alif, Wei Zhang <br>
+        Under Review at AAAI, 2025
+      </span>
+    </li>
+
+    <li>
+      <b>MACS</b>: Multi-Domain Adaptation Facilitates Accurate Connectomics Segmentation
+      <span class="meta">
+        <b>Abrar Rahman Abir</b>, Anik Saha, Md Shamsuzzoha Bayzid <br>
+        Under Review at AAAI, 2025
+      </span>
+    </li>
+
+    <li>
+      <b>MExConn</b>: A Mechanistically Interpretable Multi-Expert Framework for Multi-Organelle Segmentation in Connectomics
+      <span class="meta">
+        <b>Abrar Rahman Abir</b>*, Anik Saha*, Shashata Sawmya, Thomas L. Athey, Nir N Shavit, Md Shamsuzzoha Bayzid <br>
+        Under Review at AAAI, 2025
+      </span>
+    </li>
+
+    <li>
+      <a class="paper-link" href="https://arxiv.org/pdf/2506.06980" target="_blank" rel="noopener">
+        <b>MOXGATE</b>: Modality-Aware Cross-Attention for Multi-Omic Gastrointestinal Cancer Sub-type Classification
+      </a>
+      <span class="meta">
+        Sajib Acharjee Dip, UA Shuvo, D Mallick, <b>Abrar Rahman Abir</b>, Liqing Zhang <br>
+        Accepted at ICLR Workshop on AI for Nucleic Acids, 2025
+      </span>
+    </li>
+
+  </ol>
+</section>
+<section id="posters" class="card section" aria-label="Poster Presentations">
+  <h2>Poster Presentations</h2>
+  <ol class="clean-list">
+
+    <li>
+      <b>Abrar Rahman Abir</b>, Sajib Acharjee Dip, Liqing Zhang <br>
+      <b>CFM-GP</b>: Unified Conditional Flow Matching to Learn Gene Perturbation Across Cell Types <br>
+      <span class="meta">Accepted at ISMB, 2025</span>
+    </li>
+
+    <li>
+      <b>Abrar Rahman Abir</b>, Khandakar Tanvir Ahmed, Wei Zhang <br>
+      <b>DCGAT-DTI</b>: Dynamic Cross Graph Attention Network for Drug-Target Interaction Prediction <br>
+      <span class="meta">Accepted at RECOMB, 2025</span>
+    </li>
+
+    <li>
+      <b>Abrar Rahman Abir</b>, Sajib Acharjee Dip, Liqing Zhang <br>
+      <b>Multi-Omics Fusion for Alzheimer’s Disease Prediction</b>: A Novel Unpaired Cross-Omics Translation Approach <br>
+      <span class="meta">Accepted at RECOMB, 2025</span>
+    </li>
+
+    <li>
+      <b>Abrar Rahman Abir</b>, Md Toki Tahmid, Rafiqul Islam Rayan, M Saifur Rahman <br>
+      <b>Deciphering the Twists of RNA</b>: RNA Torsion Angle Prediction with Attention-Inception Leveraging RNA Language Model <br>
+      <span class="meta">ISMB, 2024</span> <br>
+      <a class="paper-link" href="https://youtu.be/Py4u5r75mJA?si=E4KDXT74IDPdujjh" target="_blank" rel="noopener">[Video]</a>
+    </li>
+
+    <li>
+      <b>Abrar Rahman Abir</b>, Md Toki Tahmid, M Saifur Rahman <br>
+      <b>Multi-Label Contrastive Learning Augmented mRNA Subcellular Localization Prediction</b> Leveraging RNA Language Model <br>
+      <span class="meta">ISMB, 2024</span> <br>
+      <a class="paper-link" href="https://youtu.be/R90GyncPfc8?si=Bh9hxNN4G5Nq3_PA" target="_blank" rel="noopener">[Video]</a>
+    </li>
+
+  </ol>
+</section>
+
+
+    <!-- Education -->
+    <section id="education" class="card section" aria-label="Education">
+    <h2>Education</h2>
+    <div class="grid cols-2">
+      <div class="edu-block">
+        <p><b>Bangladesh University of Engineering and Technology</b></p>
+        <p>Bachelor of Science in Computer Science and Engineering</p>
+         <p>Currently in Senior year</p>
+        <p>CGPA : <b>3.96</b> </p>
+      </div>
+    </div>
+
+        <!-- <div class="edu-block">
+          <p><b>PhD</b> incoming, focus on computational biology and AI.</p>
+          <p>Interests include generative modeling and connectomics.</p>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card section" aria-label="Contact">
+      <h2>Contact</h2>
+      <p class="contact-line">
+        <a class="email-link" href="mailto:abrarrahmanabir156@gmail.com">abrarrahmanabir156@gmail.com</a>
+      </p>
+    </section>
+
+    <p class="footer">© <span id="year"></span> Abrar Rahman Abir. All rights reserved.</p>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+      document.body.classList.toggle('no-scroll', !open);
+    });
+  </script>
 </body>
 </html>
