@@ -1,3 +1,7 @@
+html {
+  color-scheme: light;
+}
+
 :root{
   --accent:#6a0dad;
   --accent-2:#9b59ff;
