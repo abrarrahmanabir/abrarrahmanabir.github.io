@@ -221,23 +221,3 @@ ol.clean-list li{
   .grid.cols-2,.grid.cols-3{ grid-template-columns:1fr }
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark){
-  body{
-    color:#e5e7eb;
-    background:radial-gradient(1200px 800px at 15% -10%, #0b1324 0%, #0b0f1a 45%, #090d16 100%);
-  }
-  .topbar{ background:rgba(11,15,26,.62); border-color:rgba(255,255,255,.06) }
-  .brand-name{ filter:saturate(120%) }
-  .card{ background:var(--card-dark); border-color:rgba(255,255,255,.06) }
-  h2{ color:#f9fafb }
-  h2::after{ background:#9b59ff }
-  .footer{ color:#a3aab8 }
-  .icon-pill{ background:#12182c; border-color:rgba(155,89,255,.25) }
-  .icon-pill svg{ fill:#c7b7ff }
-  .paper-link:hover{ color:#c7b7ff }
-  #publications ol.clean-list li{ background:#211a2c }
-  #posters      ol.clean-list li{ background:#231c22 }
-  #news         ol.clean-list li{ background:#162225 }
-  #education    .edu-block       { background:#182035 }
-}
