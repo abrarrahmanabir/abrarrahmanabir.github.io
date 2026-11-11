@@ -115,11 +115,21 @@ a:focus-visible, .btn:focus-visible, .nav-link:focus-visible{ box-shadow:var(--r
 .icon-pill:hover{ transform:translateY(-1px); box-shadow:0 10px 22px rgba(106,13,173,.16) }
 .icon-pill svg{ width:20px; height:20px; fill:#5b21b6 }
 
-/* Photo */
+/* /* Photo */
 .hero-photo{ display:flex; align-items:center; justify-content:center }
 .photo{
   width:clamp(240px,26vw,340px); height:clamp(240px,26vw,340px);
   border-radius:50%; object-fit:cover;
+  border:6px solid rgba(255,255,255,.92);
+  box-shadow:0 18px 36px rgba(0,0,0,.18);
+  outline:10px solid rgba(106,13,173,.10);
+} */
+
+/* Photo */
+.hero-photo{ display:flex; align-items:center; justify-content:center }
+.photo{
+  width:100%; max-width:360px; height:auto;
+  border-radius:16px;
   border:6px solid rgba(255,255,255,.92);
   box-shadow:0 18px 36px rgba(0,0,0,.18);
   outline:10px solid rgba(106,13,173,.10);
